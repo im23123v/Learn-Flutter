@@ -1,15 +1,53 @@
 1. 
 <!DOCTYPE html>
 <html>
-<body style="margin: 30%;">
-<h2>Registration Form</h2>
-<form>
-  Name: <input type="text" name="name"><br>
-  Email: <input type="email" name="email"><br>
-  Password: <input type="password" name="password"><br>
-  Gender: <input type="radio" name="gender">Male <input type="radio" name="gender">Female<br>
-  <input type="submit" value="Register">
-</form>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+
+        .box {
+            width: 280px;
+            background: white;
+            padding: 15px;
+            margin: 50px auto;
+            border-radius: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 6px;
+            margin: 8px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 7px;
+            background: blue;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h3>Registration Form</h3>
+
+    <form>
+        <label>Name:</label>
+        <input type="text" placeholder="Enter Name">
+
+        <label>Password:</label>
+        <input type="password" placeholder="Enter Password">
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
 </body>
 </html>
 
@@ -87,7 +125,17 @@ sudo apt install jenkins -y
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
 
-# 7. Access Jenkins
+# 7. sudo systemctl status jenkins
+
+# 8. sudo apt install ufw -y
+# 9. sudo ufw allow 8080
+# 10 . sudo ufw status
+# 11. sudo ufw enable
+
+#12. sudo ufw status
+
+# 13 . go to browser and type http://localhost:8080
+# 14. Access Jenkins
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 
